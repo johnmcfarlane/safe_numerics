@@ -209,7 +209,7 @@ std::istream & operator>>(std::istream & is, const boost::numeric::checked_resul
 namespace std {
 
 template<class R>
-class numeric_limits<boost::numeric::checked_result<R> >
+struct numeric_limits<boost::numeric::checked_result<R> >
     : public std::numeric_limits<R>
 {
     using this_type = boost::numeric::checked_result<R>;
